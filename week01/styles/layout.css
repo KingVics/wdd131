@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.heading {
+  background-color: #333;
+  height: 4rem;
+  padding: 0.7rem;
+}
+
+.heading p {
+  color: white;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 80dvh;
+}
+
+.main-section {
+  grid-column: 1/10;
+  background-color: #eee;
+  padding: 0.7rem;
+}
+
+.main-aside {
+  grid-column: 10/13;
+  background-color: bisque;
+  padding: 0.7rem;
+}
