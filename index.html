@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    hello
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals" />
+    <meta name="author" content="Sunday Victor Okoromi" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Sunday Victor Okoromi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/base.css" />
+  </head>
+  <body>
+    <header>
+      <span>WDD 131 – Dynamic Web Fundamentals</span>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/sunday-okoromi/">LinkedIn</a>
+          </li>
+          <li><a href="https://byupw.instructure.com/">I-Learn</a></li>
+          <li>
+            <a
+              href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+              >Scripture</a
+            >
+          </li>
+          <li><a href="">Project</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Sunday V. Okoromi</h1>
+      <div class="grid">
+        <section class="card">
+          <header class="card-header">About Me</header>
+
+          <div class="about-grid">
+            <p>
+              My name is Sunday Victor Okoromi, I like being refer to as Victor.
+              I was born and raised in Nigeria. I am from a family of eight and
+              married to the love of my life. I love computer, and how the
+              internet works, that is why i have chosen to become a software
+              developer. I am currently enrolled to BYU Pathway and on my
+              journey to fulfilling my dream of being a developer.
+            </p>
+
+            <img src="/images/profile.webp" alt="Profile photo" />
+          </div>
+
+          <div class="country">
+            <h3>Lagos, Nigeria</h3>
+            <hr />
+          </div>
+
+          <div class="location-grid">
+            <img src="/images/flag.jpg" alt="Flag of Nigeria" />
+            <p>
+              Nigeria, an African country on the Gulf of Guinea, has many
+              natural landmarks and wildlife reserves. Protected areas such as
+              Cross River National Park and Yankari National Park have
+              waterfalls, dense rainforest, savanna and rare primate habitats.
+              One of the most recognizable sites is Zuma Rock, a 725m-tall
+              monolith outside the capital of Abuja that's pictured on the
+              national currency
+            </p>
+          </div>
+        </section>
+
+        <section class="card">
+          <header class="card-header">Web Dev Resources</header>
+
+          <ul>
+            <li><a href="#">Dev.to Community</a></li>
+            <li><a href="#">Smashing Magazine</a></li>
+            <li><a href="#">CSS Tricks</a></li>
+            <li><a href="#">W3 Schools</a></li>
+            <li><a href="#">Udemy</a></li>
+            <li><a href="#">Lorem Picsum Image Placeholder</a></li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> ⭐ Sunday Victor Okoromi ⭐ Lagos,
+        Nigeria
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="/scripts/getdates.js"></script>
+  </body>
 </html>

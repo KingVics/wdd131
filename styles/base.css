@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #061e29;
+  --secondary-color: #1d546d;
+  --accent-color: #5f9598;
+  --accent-color2: #f3f4f4;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header span {
+  display: block;
+  text-align: center;
+  color: var(--accent-color2);
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+nav {
+  background-color: var(--secondary-color);
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: var(--accent-color2);
+}
+
+nav li:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+main {
+  width: min(1200px, 100% - 2rem);
+  margin: 2rem auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* TWO COLUMN LAYOUT */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--accent-color);
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card ul {
+  padding: 3rem;
+}
+
+.card ul li a {
+    text-decoration: none;
+}
+.country {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+hr {
+  width: 50%;
+}
+
+/* ABOUT SECTION GRID */
+.about-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.about-grid img {
+  width: 10rem;
+  border: 1px solid #ccc;
+}
+
+/* LOCATION SECTION */
+.location-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.location-grid img {
+  width: 80px;
+  border: 1px solid #ccc;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer p:first-child {
+  color: var(--accent-color2);
+}
+
+footer p:last-child {
+  color: yellow;
+}
