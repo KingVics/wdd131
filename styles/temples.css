@@ -6,7 +6,7 @@
 
 :root {
   --primary-color: #061e29;
-  --secondary-color: #1d546d;
+  --secondary-color: #0c1c24;
   --accent-color: #5f9598;
   --accent-color2: #f3f4f4;
 }
@@ -109,5 +109,5 @@ footer p:first-child {
 }
 
 footer p:last-child {
-  color: yellow;
+  color: white;
 }
