@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #061e29;
+  --secondary-color: #1d546d;
+  --accent-color: #5f9598;
+  --accent-color2: #f3f4f4;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  margin: 1rem auto;
+  max-width: 960px;
+  padding: 0.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 20px;
+  align-items: center;
+  position: relative;
+}
+
+nav {
+  display: none;
+}
+
+.show nav {
+  display: block;
+  top: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.show nav a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+li a,
+span,
+#menu {
+  color: white;
+}
+
+#menu {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1px 10px;
+  background-color: #eee;
+  color: #000;
+}
+
+#menu::before {
+  content: '≡';
+}
+
+.show #menu::before {
+  content: 'X';
+}
+
+img {
+  width: 100%;
+}
+
+.grid {
+  margin-block: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  place-items: center;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer p:first-child {
+  color: var(--accent-color2);
+}
+
+footer p:last-child {
+  color: yellow;
+}
