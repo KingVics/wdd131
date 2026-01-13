@@ -26,7 +26,7 @@ header span {
 }
 
 nav {
-  background-color: var(--secondary-color);
+  background: rgb(12, 28, 36);
   padding: 1rem 2rem;
 }
 
@@ -39,7 +39,7 @@ nav ul {
 nav a {
   display: block;
   text-decoration: none;
-  color: var(--accent-color2);
+  color: rgb(243, 244, 244);
 }
 
 nav li:hover {
@@ -85,7 +85,7 @@ h1 {
 }
 
 .card ul li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .country {
   display: flex;

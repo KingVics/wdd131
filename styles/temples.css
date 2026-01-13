@@ -26,23 +26,23 @@ main {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: var(--primary-color);
+  background: rgb(12, 28, 36);
   padding: 20px;
   align-items: center;
   position: relative;
 }
 
-nav {
+nav ul {
   display: none;
 }
 
-.show nav {
+.show nav ul {
   display: block;
   top: 100%;
   left: 0;
   position: absolute;
   width: 100%;
-  background-color: var(--primary-color);
+  background: rgb(12, 28, 36);
 }
 
 ul {
@@ -56,6 +56,11 @@ ul {
   text-decoration: none;
   transition: 0.5s;
   font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+nav a,
+nav span {
+  font-family: 700;
 }
 
 li a,

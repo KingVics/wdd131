@@ -3,13 +3,17 @@
     display: none;
   }
   nav {
-    display: block;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
     position: unset !important;
-    width: unset !important;
+    width: 100%;
   }
   ul {
-    display: flex;
+    display: flex !important;
     gap: 3rem;
+    position: unset !important;
+    width: unset !important;
   }
 
   li a {
