@@ -21,7 +21,7 @@ header span {
   display: block;
   text-align: center;
   color: var(--accent-color2);
-  background-color: #000;
+  background-color: var(--secondary-color);
   padding: 1rem;
 }
 
