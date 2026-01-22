@@ -45,6 +45,7 @@
   .body p {
     color: #333;
   }
+  
   .data,
   .weather-widget {
     position: absolute;
