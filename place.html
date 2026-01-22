@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a intro to Sunday Victor Okoromi WDD 131 - Dynamic Web Fundamentals journey
+    to becoming a software developer through BYU Pathway"
+    />
+    <meta name="author" content="Sunday Victor Okoromi" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Sunday Victor Okoromi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css" />
+    <script src="scripts/place.js" defer></script>
+    <title>Place</title>
+  </head>
+  <body>
+    <header>
+      <h1>Nigeria</h1>
+    </header>
+    <div class="header-line"></div>
+    <main>
+      <section>
+        <div class="hero">
+          <picture>
+            <source
+              srcset="images/animal_LG.webp"
+              media="(min-width: 1000px)"
+            />
+            <source srcset="images/animal_MD.webp" media="(min-width: 500px)" />
+            <img
+              src="images/animal_SM.webp"
+              alt="Animal in Nigeria"
+              width="500"
+              height="250"
+            />
+          </picture>
+        </div>
+        <div class="data">
+          <div class="head">
+            <h2>Data</h2>
+          </div>
+          <div class="body">
+            <p>Area: <span>923,768 km²</span></p>
+            <p>Population: <span>200 million</span></p>
+            <p>Capital: <span>Abuja</span></p>
+            <p>Language: <span>English</span></p>
+            <p>Currency: <span>Naira</span></p>
+            <p>Time Zone: <span>WAT +1</span></p>
+            <p>Calling Code: <span>+234</span></p>
+          </div>
+        </div>
+        <div class="weather-widget">
+          <div class="head">
+            <h2>Weather</h2>
+            <img src="/images/weather-svgrepo-com.svg" width="30" height="30" />
+          </div>
+          <div class="body">
+            <p>Temperature: <span>50</span></p>
+            <p>Conditions: <span>Partly Cloudy</span></p>
+            <p>Wind: <span>3 km/h</span></p>
+            <p>Wind Chill: <span id="windChill"></span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="header-line"></div>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> ⭐ Sunday Victor Okoromi ⭐ Lagos,
+        Nigeria
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

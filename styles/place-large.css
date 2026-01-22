@@ -1,0 +1,65 @@
+@media screen and (min-width: 640px) {
+  section {
+    position: relative;
+  }
+
+  .head {
+    background-color: var(--primary-color);
+    position: absolute;
+    left: -9px;
+    width: 90%;
+    top: 1rem;
+  }
+
+  .head h2 {
+    margin: 7px 1.5rem;
+    color: var(--secondary-color);
+  }
+
+  .body p {
+    margin: 0.7rem 0;
+  }
+
+  .data {
+    top: 4rem;
+    left: 1rem;
+  }
+
+  .body {
+    margin-block-start: 4rem;
+    padding: 1rem;
+
+    display: block;
+  }
+
+  .weather-widget {
+    bottom: 4rem;
+    right: 1rem;
+  }
+
+  .weather-widget .head img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .weather-widget .head {
+    flex-direction: row;
+  }
+
+  .body p {
+    color: #333;
+  }
+  .data,
+  .weather-widget {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 2px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    padding: 16px;
+    max-width: 300px;
+    width: 100%;
+  }
+}
