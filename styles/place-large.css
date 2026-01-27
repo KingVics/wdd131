@@ -45,7 +45,13 @@
   .body p {
     color: #333;
   }
-  
+
+  .svg-icon{
+    display: none;
+  }
+  .emoticon {
+  display: block;
+}
   .data,
   .weather-widget {
     position: absolute;

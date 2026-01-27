@@ -89,6 +89,10 @@ header {
   font-weight: 400;
 }
 
+.emoticon {
+  display: none;
+}
+
 footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
