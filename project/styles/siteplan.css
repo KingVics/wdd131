@@ -12,6 +12,15 @@ body {
 }
 
 h1,
+h2 {
+  color: #c62828;
+}
+
+.yellow {
+  color: #f9a825;
+}
+
+h1,
 h2,
 h3 {
   font-family: 'Poppins', sans-serif;
