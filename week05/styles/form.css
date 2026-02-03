@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e6eef4;
+  margin: 0;
+  padding: 2rem;
+}
+
+header {
+  background-color: #061e29;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+main {
+  max-width: 420px;
+  margin: auto;
+  background-color: #d9d1d8;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1.3rem;
+}
+
+/* Groups */
+.form-group,
+fieldset {
+  margin-bottom: 1.2rem;
+  border: none;
+  padding: 0;
+}
+
+label,
+legend {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.optional {
+  font-weight: normal;
+  font-size: 0.85rem;
+  color: #1f3c88;
+}
+
+input[type='text'],
+input[type='date'],
+select,
+textarea {
+  width: 95%;
+  padding: 0.6rem;
+  border-radius: 2px;
+  border: 1px solid #aaa;
+}
+
+select {
+  width: 100%;
+}
+
+fieldset label {
+  font-weight: normal;
+  margin-bottom: 0.4rem;
+}
+
+.rating-group .stars {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.rating-group label {
+  text-align: center;
+  cursor: pointer;
+}
+
+.rating-group input {
+  display: block;
+  margin: 0 auto 0.2rem;
+}
+
+.rating-group span {
+  font-size: 1.1rem;
+}
+
+input[type='submit'] {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #f1f1f1;
+  border: 1px solid #999;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: #e0e0e0;
+}
+
+footer {
+  background-color: black;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer p:first-child {
+  color: #f3f4f4;
+}
+
+footer p:last-child {
+  color: white;
+}
