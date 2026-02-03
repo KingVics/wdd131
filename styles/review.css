@@ -1,0 +1,10 @@
+.review-summary {
+  list-style: none;
+  padding: 0;
+}
+
+.review-summary li {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
