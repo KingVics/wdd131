@@ -114,8 +114,11 @@ span,
   gap: 5px;
 }
 
+.temple-location {
+  color: #000000;
+}
 .temple-content strong {
-  color: var(--accent-color);
+  color: #000000;
 }
 
 .temple-location {
