@@ -1,0 +1,46 @@
+@media screen and (min-width: 768px) {
+  .nav-links {
+    display: block !important;
+  }
+
+  #menu {
+    display: none !important;
+  }
+
+  .feature-cards {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 20px !important;
+    justify-content: center;
+  }
+
+  .steps-grid {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .info-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 30px !important;
+    margin-top: 40px !important;
+    margin-bottom: 60px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+  }
+
+  .newsletter-form {
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+  }
+}

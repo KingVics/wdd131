@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>LocalEats Delivery</title>
+    <link rel="stylesheet" href="./styles/project.css" />
+    <link rel="stylesheet" href="./styles/project-large.css" />
+    <script src="./scripts/project.js" defer></script>
+    <script src="./scripts/contact.js" defer></script>
+  </head>
+  <body>
+    <header id="header-navigation">
+      <div class="container navbar">
+        <div class="logo-area">
+          <img src="./images/logo.png" alt="LocalEats Logo" class="logo" />
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="#how">How It Works</a>
+          <a href="#delivery">Delivery Info</a>
+          <a href="contact-us.html">Contact</a>
+          <a href="menu.html" class="btn-nav-order">Order Now</a>
+          <a href="#" class="cart-icon" id="cartShow"
+            >🛒 <span id="cart-count">0</span></a
+          >
+        </nav>
+        <a href="#" id="menu" aria-label="mobile menu"></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Delicious Meals<br />Delivered To Your Door</h1>
+            <p class="tagline">Fast. Fresh. Local.</p>
+            <div class="hero-btns">
+              <button class="btn-primary-red">Order Now</button>
+              <button class="btn-accent-yellow">Check Delivery Area</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section white-bg">
+        <h2 class="section-title">Why Choose LocalEats Delivery?</h2>
+        <div class="container feature-cards">
+          <div class="feature-card">
+            <div class="card-content">
+              <span class="icon">🛵</span>
+              <div>
+                <h3>Fast Delivery</h3>
+                <p>Quick & Reliable Service</p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="card-content">
+              <span class="icon">🍴</span>
+              <div>
+                <h3>Local Restaurants</h3>
+                <p>Best Eateries in Your Area</p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="card-content">
+              <span class="icon">📍</span>
+              <div>
+                <h3>Community Focused</h3>
+                <p>Serving Your Neighborhood</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="how-it-works-banner">
+        <div class="container">
+          <h2 class="banner-title">How It Works</h2>
+          <div class="steps-grid">
+            <div class="step">
+              <span class="step-icon">📋</span>
+              <strong>Browse Restaurants</strong><br />Find your favorites.
+            </div>
+            <div class="step">
+              <span class="step-icon">📝</span> <strong>Place Your Order</strong
+              ><br />Choose your meal.
+            </div>
+            <div class="step">
+              <span class="step-icon">🛵</span>
+              <strong>Enjoy Fast Delivery</strong><br />We'll bring it to you!
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container info-contact-grid">
+        <section id="delivery" class="info-box">
+          <h2 class="box-header">Delivery Info</h2>
+          <div class="box-body">
+            <p><strong>Operating Hours:</strong> Mon–Sun: 9:00 AM – 10:00 PM</p>
+            <p><strong>Delivery Areas:</strong> Local Neighborhoods</p>
+            <button class="btn-accent-yellow full-width">
+              Check Your Area >
+            </button>
+          </div>
+        </section>
+
+        <section id="contact" class="info-box">
+          <h2 class="box-header">Contact Us</h2>
+          <div class="box-body contact-flex">
+            <div class="contact-details">
+              <p>📞 (123) 456-7890</p>
+              <p>✉️ info@localeatsdelivery.com</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <textarea placeholder="Message"></textarea>
+              <button type="submit" class="btn-primary-red">
+                Send Message >
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <div id="modalWrapper">
+        <div id="cartModal" class="modal">
+          <div class="modal-content cart-modal-content">
+            <div class="modal-header">
+              <h2>Your Order</h2>
+              <button class="close-btn" onclick="toggleCart()">×</button>
+            </div>
+
+            <div id="cartItemsList" class="cart-items-body"></div>
+
+            <div class="cart-footer">
+              <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotalAmount">$0.00</span>
+              </div>
+              <button class="btn-primary-red full-width" onclick="checkout()">
+                Checkout Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img
+            src="./images/logo.png"
+            alt="LocalEats Logo"
+            class="footer-logo"
+          />
+          <p>
+            Bringing the best local flavors straight to your doorstep. Fast,
+            fresh, and community-focused.
+          </p>
+          <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Delivery Areas</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3>Stay Updated</h3>
+          <p>Subscribe for exclusive discounts and new restaurant alerts.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email" required />
+            <button type="submit" class="btn-accent-yellow">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 LocalEats Delivery. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

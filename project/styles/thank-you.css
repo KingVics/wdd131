@@ -1,0 +1,19 @@
+.thank-you-section {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.success-icon {
+  font-size: 4rem;
+  color: #4caf50;
+  margin-bottom: 20px;
+  display: block;
+}
+.btn-group {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
